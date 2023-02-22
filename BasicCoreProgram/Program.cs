@@ -1,21 +1,26 @@
-﻿namespace BasicCoreProgram
+﻿using System.Xml;
+
+namespace BasicCoreProgram
 {
-    class HarmonicNumber
+    public class HarmonicNumber
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             
             Console.WriteLine("Enter the number : ");
             int number = Convert.ToInt32(Console.ReadLine());
-            double harmonic = 0;
+            
 
-            for (int i = 1; i<= number; i++)
+            for (int p = 2; p <= number; p++)
             {
-                harmonic += 1.0 / i; //Or we can use (double)1 / i;
+                while (number % p == 0)
+                {
+                    Console.WriteLine(p);
+                    number = number / p;
+                }
+                
             }
-            Console.WriteLine("The {0}th Harmonic number is {1}", number, harmonic);
-
-
         }
+
     }
 }
