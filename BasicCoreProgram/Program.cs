@@ -6,20 +6,15 @@ namespace BasicCoreProgram
     {
         public static void Main(string[] args)
         {
-            
-            Console.WriteLine("Enter the number : ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            
+            int dividend = 20;
+            int divisor = 8;
 
-            for (int p = 2; p <= number; p++)
-            {
-                while (number % p == 0)
-                {
-                    Console.WriteLine(p);
-                    number = number / p;
-                }
-                
-            }
+            int quotient = dividend / divisor;
+            int remainder = dividend % divisor;
+
+            Console.WriteLine("Dividend={0} Divisor={1} ", dividend, divisor);
+            Console.WriteLine("Quotient = " + quotient);
+            Console.WriteLine("Remainder = " + remainder);
         }
 
     }
