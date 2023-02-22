@@ -1,20 +1,21 @@
 ﻿namespace BasicCoreProgram
 {
-    class Poweroftwo
+    class HarmonicNumber
     {
         static void Main(string[] args)
         {
             
             Console.WriteLine("Enter the number : ");
             int number = Convert.ToInt32(Console.ReadLine());
-            int multiplier;
-            int result;
+            double harmonic = 0;
 
-            for(multiplier = 1; multiplier <= 10; multiplier++)
+            for (int i = 1; i<= number; i++)
             {
-                result = number * multiplier;
-                Console.WriteLine("{0} * {1} = {2}",number,multiplier,result);
+                harmonic += 1.0 / i; //Or we can use (double)1 / i;
             }
+            Console.WriteLine("The {0}th Harmonic number is {1}", number, harmonic);
+
+
         }
     }
 }
