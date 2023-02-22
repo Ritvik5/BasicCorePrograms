@@ -2,19 +2,19 @@
 
 namespace BasicCoreProgram
 {
-    public class HarmonicNumber
+    public class SwapTwoNumber
     {
         public static void Main(string[] args)
         {
-            int dividend = 20;
-            int divisor = 8;
+            Console.WriteLine("Enyter Two Numbers to Swap ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            int b = Convert.ToInt32(Console.ReadLine());
 
-            int quotient = dividend / divisor;
-            int remainder = dividend % divisor;
+            a = a * b;
+            b = a / b;
+            a = a / b;
 
-            Console.WriteLine("Dividend={0} Divisor={1} ", dividend, divisor);
-            Console.WriteLine("Quotient = " + quotient);
-            Console.WriteLine("Remainder = " + remainder);
+            Console.WriteLine("After Swapping " + "a= " +a +", b= " +b);
         }
 
     }
