@@ -2,19 +2,21 @@
 
 namespace BasicCoreProgram
 {
-    public class SwapTwoNumber
+    public class IsEvenOdd
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enyter Two Numbers to Swap ");
+            Console.WriteLine("Enyter Any Number to Check its Even or Odd ");
             int a = Convert.ToInt32(Console.ReadLine());
-            int b = Convert.ToInt32(Console.ReadLine());
-
-            a = a * b;
-            b = a / b;
-            a = a / b;
-
-            Console.WriteLine("After Swapping " + "a= " +a +", b= " +b);
+            
+            if(a % 2 == 0 )
+            {
+                Console.WriteLine("Number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Number is Odd");
+            }
         }
 
     }
