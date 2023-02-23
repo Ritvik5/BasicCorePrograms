@@ -2,45 +2,34 @@
 
 namespace BasicCoreProgram
 {
-    public class IsVowelConstant
+    public class LargestOFThree
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Alphabet to Check :");
+            int num1 = 10;
+            int num2 = 20;
+            int num3 = 30;
 
-            try
+            if (num1 > num2)
             {
-                char alpha = Convert.ToChar(Console.ReadLine());
-                switch(alpha)
+                if (num1 < num3)
                 {
-                    case 'a':
-                        Console.WriteLine("The Character is Vowel");
-                        break;
-                    case 'e':
-                        Console.WriteLine("The Character is Vowel");
-                        break;
-                    case 'i':
-                        Console.WriteLine("The Character is Vowel");
-                        break;
-                    case 'o':
-                        Console.WriteLine("The Character is Vowel");
-                        break;
-                    case 'u':
-                        Console.WriteLine("The Character is Vowel");
-                        break;
-                        default: 
-                        Console.WriteLine("The Character is Constant");
-                        break;
-                
+                    Console.WriteLine("Number one is Largest");
+
+                }
+                else
+                {
+                    Console.WriteLine("Number three is Largest");
                 }
             }
-            catch
+            else if (num2 < num3)
             {
-                Console.WriteLine("You have entered wrong input, please enter any character");
+                Console.WriteLine("Number Two is Largest");
             }
-
-            
+            else
+            {
+                Console.WriteLine("Number three is Largest");
+            }
         }
-
     }
 }
