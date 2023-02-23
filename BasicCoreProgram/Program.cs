@@ -2,21 +2,44 @@
 
 namespace BasicCoreProgram
 {
-    public class IsEvenOdd
+    public class IsVowelConstant
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enyter Any Number to Check its Even or Odd ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the Alphabet to Check :");
+
+            try
+            {
+                char alpha = Convert.ToChar(Console.ReadLine());
+                switch(alpha)
+                {
+                    case 'a':
+                        Console.WriteLine("The Character is Vowel");
+                        break;
+                    case 'e':
+                        Console.WriteLine("The Character is Vowel");
+                        break;
+                    case 'i':
+                        Console.WriteLine("The Character is Vowel");
+                        break;
+                    case 'o':
+                        Console.WriteLine("The Character is Vowel");
+                        break;
+                    case 'u':
+                        Console.WriteLine("The Character is Vowel");
+                        break;
+                        default: 
+                        Console.WriteLine("The Character is Constant");
+                        break;
+                
+                }
+            }
+            catch
+            {
+                Console.WriteLine("You have entered wrong input, please enter any character");
+            }
+
             
-            if(a % 2 == 0 )
-            {
-                Console.WriteLine("Number is Even");
-            }
-            else
-            {
-                Console.WriteLine("Number is Odd");
-            }
         }
 
     }
