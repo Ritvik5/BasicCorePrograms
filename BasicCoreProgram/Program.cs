@@ -22,7 +22,7 @@ namespace BasicCoreProgram
                     Console.WriteLine("Number three is Largest");
                 }
             }
-            else if (num2 < num3)
+            else if (num2 > num3)
             {
                 Console.WriteLine("Number Two is Largest");
             }
